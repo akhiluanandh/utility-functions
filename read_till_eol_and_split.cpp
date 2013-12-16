@@ -1,7 +1,6 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include <cstdio>
 
 using namespace std;
 
@@ -39,10 +38,11 @@ vector<string> split(string a)
 int main()
 {
   int t;
-  string line;
+  ios_base::sync_with_stdio(false);
+	string line;
   vector<string> words;
-  scanf("%d", &t);
-  getline(cin, line);
+  cin>>t;
+	getline(cin, line);
   while(t--)
   {
     getline(cin, line);
